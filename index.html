@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  <title>Ace design</title>
+</head>
+<body>
+  <div class="main-top">
+    <div class="container-fluid">
+    <div class="navbar" >
+      <img src="logo.png" class="navbar-logo">
+      <button class="navbar-btn hideOnmobile">Home</button>
+      <button class="navbar-btn hideOnmobile">About us</button>
+      <button class="navbar-btn hideOnmobile">Services</button>
+      <button class="navbar-btn hideOnmobile">Contact us</button>
+      <button class="navbar-btn hideOnmobile">Blogs</button>
+      <button class="navbar-btn hideOnmobile">Privacy policy</button>
+      <button class="navbar-btn" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0b090c"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+      
+      <div class="navbar" id="sidebar">
+      <button onclick="hideSidebar()" class="navbar-btn" id="navbar-btn-X" ><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#0b090c"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+      <button class="navbar-btn">Home</button>
+      <button class="navbar-btn">About us</button>
+      <button class="navbar-btn">Services</button>
+      <button class="navbar-btn">Contact us</button>
+      <button class="navbar-btn">Blogs</button>
+      <button class="navbar-btn">Privacy policy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="imgSlider">
+    <div class="centerText">
+      <u><h3>Bringing your dream spaces to life</h3></u>
+      <h4> with expert design and impeccable style</h4>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="servicesContainer">
+    <div class="heading" >
+      <h3 align="center">Our Services</h3>
+    </div>
+    </div>
+    <div class="container" id="services">
+      <div class="row">
+        <div class="col-4" id="col1">
+          <div class="info">
+          <h2>01</h2>
+          <h4>Interior Designing</h4>
+          <h6>
+            Interior designing is the art and science of enhancing the interiors of a space to create a more aesthetically pleasing and functional environment. It involves a careful balance of design elements such as color, furniture, lighting, texture, and layout to suit the needs and preferences of the inhabitants. Whether it’s a residential home, office, or commercial space, interior design aims to optimize the use of space while reflecting personal style. Professionals in the field consider both the practical and emotional aspects of design, ensuring comfort, functionality, and beauty are seamlessly integrated. From selecting materials and furnishings to creating harmonious themes, interior design plays a crucial role in shaping how people experience their surroundings.</h6>
+          </div>
+          </div>
+        <div class="col-4" id="col2">
+          <div class="info">
+          <h2>02</h2>
+          <h4>Interior Styling</h4>
+          <h6>
+            Interior styling is the art of adding the finishing touches to a space, transforming it into a visually appealing and cohesive environment. It goes beyond the basic elements of interior design by focusing on the arrangement and selection of accessories, textiles, artwork, and furniture to create a personalized atmosphere. The goal of interior styling is to infuse personality, warmth, and character into a room, ensuring that every piece contributes to the overall aesthetic. Through thoughtful placement of décor items, playing with colors, textures, and patterns, interior styling enhances the mood of a space while making it functional and inviting. Whether it’s through seasonal updates or a complete makeover, styling brings a fresh and dynamic feel to any interior.</h6>
+          </div>
+        </div>
+        <div class="col-4" id="col3">
+          <div class="info">
+          <h2>03</h2>
+          <h4>Furniture Designing</h4>
+          <h6>
+            Furniture designing is the process of creating functional and aesthetically pleasing furniture pieces that enhance the comfort and style of a space. It combines artistry with practicality, focusing on the form, structure, materials, and functionality of each piece. Designers consider factors such as ergonomics, durability, and how the furniture fits within a particular interior style, whether it’s modern, minimalist, or traditional. From selecting sustainable materials to crafting unique, custom designs, furniture design plays a key role in defining the character of a room. Whether it's a sleek sofa, an intricately carved chair, or a multifunctional table, the goal is to create furniture that not only serves its purpose but also adds to the overall beauty and atmosphere of the space.</h6>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+    function showSidebar(){
+      const sideBar= document.querySelector('#sidebar');
+      sidebar.style.display ='flex';
+    }
+    function hideSidebar(){
+      const sideBar= document.querySelector('#sidebar');
+      sidebar.style.display ='none';
+    }
+  </script>
+</body>
+</html>
