@@ -83,19 +83,19 @@ body{
 }
 @keyframes changeImage {
   0%{
-    background-image: url('Images/img1.jpg');
+    background-image: url('img1.jpg');
   }  
   25%{
-    background-image: url('Images/img2.jpg');
+    background-image: url('img2.jpg');
   }  
   50%{
-    background-image: url('Images/img3.jpg');
+    background-image: url('img3.jpg');
   }  
   75%{
-    background-image: url('Images/img4.jpg');
+    background-image: url('img4.jpg');
   } 
   100%{
-    background-image: url('Images/img1.jpg');
+    background-image: url('img1.jpg');
   }   
 }
 .centerText{
@@ -155,7 +155,7 @@ h2{
 
 .row 
 #col1:hover{
-  background-image: url('./Images/img10.jpg');
+  background-image: url('img10.jpg');
   transition-delay:5s;
   background-size: 100%;
   background-blend-mode: color-burn;
@@ -163,13 +163,13 @@ h2{
 }
 .row 
 #col2:hover{
-  background-image: url('./Images/img12.jpg');
+  background-image: url('img12.jpg');
   background-size: 100%;;
   background-repeat: no-repeat;
 }
 .row 
 #col3:hover{
-  background-image: url('./Images/img3.jpg');
+  background-image: url('img3.jpg');
   transition: background-image 0.2s ease-in-out;
   background-size: 100%;
   background-repeat: no-repeat;
