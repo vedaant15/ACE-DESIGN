@@ -69,7 +69,7 @@ body{
 .hi{
   cursor: pointer;
 }
-@media(max-width:672px){
+@media(max-width:650px){
   .hideOnmobile{
     display: none;
   }
@@ -119,11 +119,8 @@ body{
   background-color:#806248;
 }
 #services{
-  padding-left: 10vw;
-  padding-right: 20vw;
   align-items: center;
   justify-content: center;
-  padding-right: 0;
   background-color:#806248;
 }
 h2{
@@ -145,6 +142,7 @@ h2{
     margin: 0 0 20px;
 }
 .col-4 h6{
+  color: #000;
   justify-content: center;
   align-items: center;
   padding-right: 10px;
@@ -156,9 +154,7 @@ h2{
 .row 
 #col1:hover{
   background-image: url('./Images/img10.jpg');
-  transition-delay:5s;
   background-size: 100%; 
-  background-blend-mode: color-burn;
   background-repeat: no-repeat;
 }
 .row 
@@ -180,5 +176,122 @@ h2{
     line-height: 200%;
     font-size: 10%;
     mask-repeat: no-repeat;
+  }
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Engagement process section */
+.engagement-process {
+  background-color: #d4cabc;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 18%;
+  padding: 20px;
+  background-color: #806248;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step .icon {
+  margin-bottom: 20px;
+}
+
+.step img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.step h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins", Sans-serif;
+  color: #0b090c;
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-family: "Poppins", Sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* CTA button */
+.cta-btn {
+  display: inline-block;
+  background-color: #806248;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .steps {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .step {
+      width: 80%;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .cta-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
   }
 }
