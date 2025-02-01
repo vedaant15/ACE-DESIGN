@@ -98,18 +98,28 @@ body{
     background-image: url('Images/img6.jpg');
   }   
 }
-.centerText{
-  padding-top: 350px;
-  padding-right: 30vw;
-  padding-left: 30vw;
-  font-family:"DM Serif Text", serif;
-  font-size: 60px;
-  height: 20vh;  
-  text-wrap: nowrap;
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text both horizontally and vertically */
+  font-family: "DM Serif Text", serif;
   color: #0b090c;
-  font-weight: 350;
   text-align: center;
+  font-weight: 350;
+  padding: 0 15px; /* Padding to ensure text doesn't touch the edges */
 }
+.centerText h3 {
+  font-size: 3.5vw; /* Use relative units like vw for responsive font size */
+  margin: 0;
+  text-decoration: underline;
+}
+.centerText h4 {
+  font-size: 2vw; /* Use relative units for smaller text */
+  margin-top: 10px;
+}
+
+
 
 .heading{
   display: block;
@@ -120,9 +130,12 @@ body{
 }
 #services{
   align-items: center;
+  padding-left: 12px;
+  padding-right: 10px;
   justify-content: center;
   background-color:#806248;
 }
+.info
 h2{
   font-family: "Teko", Sans-serif;
     font-size: 60px;
@@ -170,6 +183,7 @@ h2{
   background-size:100%;
   background-repeat: no-repeat;
 }
+
 
 @media(max-width:650px){
   .hideOnmobileText{
@@ -224,7 +238,7 @@ p {
 }
 
 .step:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .step .icon {
@@ -240,7 +254,7 @@ p {
 .step h2 {
   font-size: 1.5rem;
   font-family: "Poppins", Sans-serif;
-  color: #0b090c;
+  color: #0b090c  ;
   margin-bottom: 15px;
 }
 
@@ -293,5 +307,78 @@ p {
   .cta-btn {
       font-size: 1rem;
       padding: 12px 25px;
+  }
+}
+.footer{
+  background-color: #50311d;
+  padding: 40px 0;
+}
+.container
+.footer{
+  max-width: 1170px ;
+  margin: auto
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 2.5vw;
+  font-family: DM Serif Text;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+.footer-col h4::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color:  #000;
+  height: 4px;
+  box-sizing: border-box;
+  width: 10vw;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.footer-col h4:hover:after{
+  transform: scale(1);
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block ;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 15px;
+}
+
+/* responsiveness */
+@media (max-width:767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:574px){
+  .footer-col{
+    width: 100%;
   }
 }
